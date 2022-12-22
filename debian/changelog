@@ -1,0 +1,88 @@
+psautohint (2.3.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.3.0
+  * d/watch: Change GitHub archive URL
+  * d/control: Update dependencies
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Sun, 16 May 2021 22:21:45 +0800
+
+psautohint (2.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.2.0
+  * debian/control:
+    - Update dependencies
+    - Bump Standards-Version to 4.5.1. No additional changes are needed.
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Fri, 01 Jan 2021 18:58:08 +0800
+
+psautohint (2.1.0-1) unstable; urgency=medium
+
+  * debian/watch: Fix upstream version mangle
+  * New upstream version 2.1.0
+  * debian/control:
+    - Use debhelper 13
+    - Update dependencies
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Sat, 25 Jul 2020 14:02:09 +0800
+
+psautohint (2.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.0.1
+  * debian/control:
+    - Change description since psautohint is removed from AFDKO
+    - Update dependencies
+    - Bump Standards-Version to 12; No change has been made in this regard.
+  * debian/watch: Mangle upstream alpha versions
+  * Use debhelper 12
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Sun, 07 Jun 2020 14:44:46 +0800
+
+psautohint (1.9.3c1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * debian/control:
+    - Bump Standards-Version to 4.4.0
+    - Update dependencies
+  * debian/watch: Change tracking filename
+  * debian/rules: Delete generated file after dh_autoclean
+
+ -- Yao Wei (魏銘廷) <mwei@debian.org>  Thu, 18 Jul 2019 10:36:17 -0300
+
+psautohint (1.9.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump minimum python3-fonttools to 3.33.0
+  * Drop python3-ufolib from Build-Depends
+  * Add Testsuite: autopkgtest-pkg-python
+  * Bump Standards-Version to 4.2.1
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 15 Dec 2018 08:18:11 -0500
+
+psautohint (1.8.1-2) unstable; urgency=medium
+
+  * New upstream release
+  * debian/watch: Track releases from GitHub again
+  * Build-Depend on python3-pytest
+  * Run unit tests but not the integration tests
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 11 Sep 2018 22:10:32 -0400
+
+psautohint (1.7.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop patch, applied in new release
+  * Build-Depend on python3-setuptools-scm
+  * Bump minimum python3-fonttools to 3.29.0
+  * Update debian/watch to use pypi for releases for now. See issue 98.
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 03 Sep 2018 16:09:34 -0400
+
+psautohint (1.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #890218)
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 12 Feb 2018 07:37:38 -0500

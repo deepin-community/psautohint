@@ -1,0 +1,43 @@
+Source: psautohint
+Section: fonts
+Priority: optional
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Uploaders: Jeremy Bicha <jbicha@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-dev,
+               python3-fonttools (>= 4.20.0),
+               python3-pytest <!nocheck>,
+               python3-setuptools,
+               python3-setuptools-scm
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/fonts-team/psautohint.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/psautohint
+Homepage: https://github.com/adobe-type-tools/psautohint
+Testsuite: autopkgtest-pkg-python
+
+Package: psautohint
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-psautohint (>= ${binary:Version}),
+ python3-pkg-resources
+Description: Font autohinter from AFDKO
+ psautohint is the font autohinter from Adobe Font Development Kit for OpenType
+ (AFDKO).
+ .
+ This package provides the executable program.
+
+Package: python3-psautohint
+Section: python
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends}
+Description: Python library for psautohint font hinter from AFDKO
+ psautohint is the font autohinter from Adobe Font Development Kit for OpenType
+ (AFDKO).
+ .
+ This package provides the Python 3 library.
